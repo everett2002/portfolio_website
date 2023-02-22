@@ -1,4 +1,3 @@
-
 import './App.css';
 import Navbar from './components/navbar';
 import Maincard from './components/maincard';
@@ -15,17 +14,20 @@ function App() {
     element.classList.add("show-navbar");
   }
 
-  function hideCollapsible() {
+  function hideCollapsible(event) {
     const element = document.getElementsByClassName("collapsible-navbar")[0];
 
     element.classList.add("hide-navbar");
     element.classList.remove("show-navbar");
+
+    event.preventDefault(); // prevent the default behavior of the anchor tag
+    const id = event.target.getAttribute('href');
+    document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
   }
 
   return (
 
     <div className="App">
-
 
       <body className='website-container'>
         <div className='collapsible-navbar'>

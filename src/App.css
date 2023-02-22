@@ -104,7 +104,7 @@ a {
 #front-page {
   display: grid;
   color: blueviolet;
-  grid-template-rows: 4rem 80fr 10fr;
+  grid-template-rows: 4rem 75fr 25fr;
   height: 100vh;
   /* background: linear-gradient(rgba(0,5,19,1) 0%, rgb(0, 26, 98) 100%) */
 }
@@ -244,6 +244,10 @@ a {
 @media only screen and (max-width: 1024px) {
   #about {
     padding-top: 0;
+  }
+
+  #front-page {
+    grid-template-rows: 4rem 75fr 25fr;
   }
 
   .projects-header {

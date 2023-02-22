@@ -1,38 +1,358 @@
-.App {
-  text-align: center;
+body {
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar {
+  display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.divider {
+  height: 1.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.large-divider {
+  height: 5rem;
+}
+
+.website-container {
+  background-color: blue;
+  background: linear-gradient(rgba(0,5,19,1) 0%, rgb(0, 26, 98) 100%);
+  color: rgb(217, 177, 255);
+
+  overflow-y: hidden;
+}
+
+a {
+  color: blueviolet;
+}
+
+.test-text {
+  padding: 0 1rem;
+  width: 10rem;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+  max-width: 1000px;
+}
+
+a:hover {
+  color: rgb(208, 158, 255);
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar-element {
+  padding: 1rem;
+}
+
+
+.navbar-background {
+  background-color: rgb(0,5,19,1);
+
+  display: flex;
+  grid-template-rows: 50fr, 50fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-container {
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  min-width: 80vw;
+  max-width: 750px;
+}
+
+.collapsible-navbar {
+  position: fixed;
+  right: -12.5rem;
+  height: 100vh;
+  width: 7.5rem;
+  padding: 2.5rem;
+  background-color: rgb(13, 19, 35) ;
+  display: none;
+}
+
+.collapsible-element {
+  padding: 1rem;
+  display: flex;
+  color: blueviolet;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.close-button {
+  position: absolute;
+  right: 0.1rem;
+  top: 0.1rem;
+}
+
+.collapsible-element:hover {
+  color: rgb(208, 158, 255);
+}
+
+
+
+#front-page {
+  display: grid;
+  color: blueviolet;
+  grid-template-rows: 4rem 80fr 10fr;
+  height: 100vh;
+  /* background: linear-gradient(rgba(0,5,19,1) 0%, rgb(0, 26, 98) 100%) */
+}
+
+.maincard {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 5rem;
+  margin-bottom: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.maincard-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.maincard-link {
+  padding: 1rem;
+}
+
+/* About Me Page */
+
+#about {
+  display: grid;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.profile-picture {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  margin: 2rem;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 20fr 75fr;
+  max-width: 1000px;
+  justify-items: center;
+  align-content: top;
+  column-gap: 3rem;
+  padding: 2rem;
+  /* background-color: rgb(0, 13, 52); */
+  background: linear-gradient(rgb(0, 14, 51) 0%, rgb(0, 15, 55) 100%);
+  margin: 2rem;
+
+  border-radius: 2rem;
+}
+
+.about-header {
+  margin-top: 0;
+}
+
+.about-text {
+  margin: 2rem;
+}
+
+.collapsible {
+  display: none;
+}
+
+/* Projects\ */
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-header {
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.project-entry {
+  grid-template-rows: 2rem 1rem 1rem;
+  padding: 2rem;
+} 
+
+.project-entries {
+  max-width: 1000px;
+}
+
+.project-ender {
+  padding-left: 2rem;
+}
+
+.skill {
+  background-color: rgb(158, 99, 213);
+  width: fit-content;
+  padding: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 26, 98);
+  border-radius: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  padding-left: 1rem;
+
+}
+
+/* Fun */
+
+.fun {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* footer */
+.credits {
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  #about {
+    padding-top: 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  .projects-header {
+    padding-top: 0;
   }
+
+  .navbar-element {
+    display: none;
+    
+  }
+
+  .maincard {
+    font-size: 0.7rem
+  }
+
+  .navbar {
+    font-size: 0.7rem;
+  }
+
+
+  .main-title {
+    font-size: 2.8rem;
+  }
+  .collapsible {
+    display: block;
+    align-self: right;
+  }
+
+
+  .navbar-container {
+    min-width: 70vw;
+  }
+
+  .maincard-link {
+    padding: 0.5rem;
+  }
+
+  .test-text {
+    font-size: 1.1rem;
+  }
+
+  .skill {
+    border-radius: 1rem;
+  }
+
+  .divider{
+    height: 12rem;
+  }
+
+  #front-page {
+    grid-template-rows: 4rem 90fr 10fr;
+  }
+
+  .collapsible-navbar {
+    display: block;
+    
+  }
+
+  .show-navbar {
+    transition: 0.5s;
+    transform: translateX(-12.5rem);
+  }
+
+  .hide-navbar {
+    transition: 0.5s;
+    transform: translateX(12.5rem);
+  }
+}
+
+
+@media only screen and (max-width: 840px) {
+  .divider {
+    height: 0.5rem;
+  }
+  .about-container {
+    grid-template-rows: 50fr,50fr;
+    grid-template-columns: 1fr;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .about-text {
+    padding: 0 2rem;
+    font-size: 1rem;
+  }
+
+  .about-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 700px) { 
+  .navbar-container {
+    min-width: 50vw;
+  }
+  .about-text {
+    margin: 0 1.5rem 0 2.5rem;
+    padding: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar-container {
+      min-width: 40vw;
+    }
+    .about-text {
+      margin: 0rem;
+      padding: 0rem;
+    }
+  
 }

@@ -77,7 +77,7 @@ function App() {
         <div className="large-divider"></div>
         <div className="large-divider"></div>
 
-        <div className="credits">Everett &copy; 2023</div>
+        <div className="credits">Everett Ho &copy; 2023</div>
 
 
       </body>

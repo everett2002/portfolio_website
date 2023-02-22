@@ -246,10 +246,6 @@ a {
     padding-top: 0;
   }
 
-  #front-page {
-    grid-template-rows: 4rem 75fr 25fr;
-  }
-
   .projects-header {
     padding-top: 0;
   }
@@ -295,10 +291,6 @@ a {
 
   .divider{
     height: 12rem;
-  }
-
-  #front-page {
-    grid-template-rows: 4rem 90fr 10fr;
   }
 
   .collapsible-navbar {

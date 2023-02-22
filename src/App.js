@@ -1,11 +1,9 @@
-import { useState } from 'react';
+
 import './App.css';
 import Navbar from './components/navbar';
 import Maincard from './components/maincard';
 import Profile from './images/profile.png';
 import ProjectEntry from './components/projectentry';
-import NavbarElement from './components/navbarelement';
-import { DOMElement } from 'react';
 <script src="https://kit.fontawesome.com/063330461c.js" crossorigin="anonymous"></script>
 
 function App() {
@@ -35,7 +33,7 @@ function App() {
             <i class="fa-solid fa-xmark"></i>
           </div>
           <div className='collapsible-element' onClick={hideCollapsible}><a href="./App.css#about">About</a></div>
-          <div className='collapsible-element' onClick={hideCollapsible}><a href="./App.css#projects">Projects</a></div>
+          <div className='collapsible-element' onClick={hideCollapsible}><a href="#./App.css#projects">Projects</a></div>
         </div>
 
 
@@ -79,7 +77,7 @@ function App() {
         <div className="large-divider"></div>
         <div className="large-divider"></div>
 
-        <div className="credits">Everett Ho &copy; 2023</div>
+        <div className="credits">Everett &copy; 2023</div>
 
 
       </body>

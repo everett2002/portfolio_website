@@ -1,7 +1,3 @@
-.App {
-  background-attachment: fixed;
-}
-
 .body {
   overflow-x: hidden;
 }
@@ -19,7 +15,8 @@
 }
 
 .website-container {
-  background-color: blue;
+  background-color: black;
+  background-attachment: fixed;
   background: linear-gradient(rgba(0,5,19,1) 0%, rgb(0, 26, 98) 100%);
   color: rgb(217, 177, 255);
 

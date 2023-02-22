@@ -32,8 +32,8 @@ function App() {
           <div onClick={hideCollapsible} className='collapsible-element close-button'>
             <i class="fa-solid fa-xmark"></i>
           </div>
-          <div className='collapsible-element' onClick={hideCollapsible}><a href="./App.css#about">About</a></div>
-          <div className='collapsible-element' onClick={hideCollapsible}><a href="#./App.css#projects">Projects</a></div>
+          <div className='collapsible-element' onClick={hideCollapsible}><a href="#about">About</a></div>
+          <div className='collapsible-element' onClick={hideCollapsible}><a href="#projects">Projects</a></div>
         </div>
 
 

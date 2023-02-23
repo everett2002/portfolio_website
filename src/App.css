@@ -328,11 +328,6 @@ a {
     background: none;
   }
 
-  .about-text {
-    padding: 0 2rem;
-    font-size: 1rem;
-  }
-
   .about-header {
     text-align: center;
     margin-bottom: 2rem;
@@ -344,7 +339,7 @@ a {
     min-width: 50vw;
   }
   .about-text {
-    margin: 0 1.5rem 0 2.5rem;
+    margin: 0 0.5rem 0 0.5rem;
     padding: 1.5rem;
   }
 

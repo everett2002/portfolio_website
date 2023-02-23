@@ -57,8 +57,8 @@ function App() {
             <img className='profile-picture' src={Profile} alt="Profile Picture" />
             <container className="about-text">
               <h2 className='about-header'>About Me</h2>
-              <p>Hello there! I'm Everett and welcome to my website:) Here I post fun projects I'm currently working on and more about me as well!</p>
-              <p>For My my experience please check out my Linkedin!</p>
+              <p className='about-paragraph'>Hello there! I'm Everett and welcome to my website:) Here I post fun projects I'm currently working on and more about me as well!</p>
+              <p className='about-paragraph'>For My my experience please check out my Linkedin!</p>
             </container>
           </container>
         </div>

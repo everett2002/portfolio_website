@@ -63,7 +63,7 @@ function App() {
           </container>
         </div>
 
-        <div className="large-divider"></div>
+        
         <div className="large-divider"></div>       
         <div className="large-divider"></div>
         <div className="large-divider"></div>       
@@ -71,6 +71,7 @@ function App() {
 
 
         <div id='projects'>
+          <div className="large-divider"></div>
           <h2 className='projects-header'>Projects</h2>
 
           <container class="project-entries">

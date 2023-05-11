@@ -157,6 +157,7 @@ a {
   display: grid;
   grid-template-columns: 20fr 75fr;
   max-width: 1000px;
+  height: 750px;
   justify-items: center;
   align-content: top;
   column-gap: 3rem;
@@ -323,7 +324,6 @@ a {
   .about-container {
     grid-template-rows: 50fr,50fr;
     grid-template-columns: 1fr;
-    height:750px;
     margin: 0;
     border-radius: 0;
     background: none;
